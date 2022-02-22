@@ -5,13 +5,13 @@ import { Box, Button, FormControl, FormHelperText, FormLabel, Input, Stack, useT
 import { FiArrowRight } from 'react-icons/fi'
 import { useNavigate } from 'react-location'
 
-import { registerUserFetcher } from '../../api'
+import { registerUserFetcher } from '../../api/mod'
 
 import { useFormik } from 'formik'
 import { useSWRConfig } from 'swr'
-import { IHandleSubmit } from '../../types'
+import { IHandleSubmit } from '../../types/mod'
 
-import type { RegisterType } from '../../api'
+import type { RegisterType } from '../../api/mod'
 
 export const UserSignUpForm: React.FunctionComponent = () => {
     const { mutate } = useSWRConfig();

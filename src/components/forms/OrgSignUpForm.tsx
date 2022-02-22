@@ -4,8 +4,8 @@ import { FiArrowRight } from 'react-icons/fi';
 
 import { useFormik } from 'formik';
 
-import type { OrganizationType } from '../../api'
-import { fetchCountries, COUNTRY_API } from '../../api'
+import type { OrganizationType } from '../../api/mod'
+import { fetchCountries, COUNTRY_API } from '../../api/mod'
 
 import useSwr from 'swr';
 

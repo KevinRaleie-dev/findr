@@ -1,5 +1,5 @@
 import create from 'zustand';
-import type { User } from '../api'
+import type { User } from '../api/mod'
 
 type UserStore = {
     token: string,

@@ -7,7 +7,7 @@ import { useUserStore } from '../store/user.store'
 import { useSWRConfig } from 'swr'
 import { useNavigate } from 'react-location'
 
-import { fetchCurrentUser } from '../api'
+import { fetchCurrentUser } from '../api/mod'
 
 export const HomePage = () => {
     const { mutate } = useSWRConfig();

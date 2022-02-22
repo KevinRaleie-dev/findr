@@ -3,7 +3,7 @@ import React from 'react'
 import { useUserStore } from '../store/user.store'
 
 import { useNavigate } from 'react-location'
-import type { User } from '../api'
+import type { User } from '../api/mod'
 
 interface INavMenuProps {
     children: React.ReactNode;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Heading, Text, Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react'
+import { Stack, Heading, Text, Tabs, TabList, Tab, TabPanels, TabPanel, Box } from '@chakra-ui/react'
 import { Card } from '../components/Card'
 import { Footer } from '../components/Footer'
 import { LayoutBox } from '../components/LayoutBox'
@@ -45,14 +45,19 @@ export const SignInPage = () => {
 
 const BottomPanel = () => {
     return (
-        <Stack  direction="row" spacing={1} mt={4} >
-        <Text>Don't have an account?</Text>
-        <Link to="/sign-up">
-            <Text
-            as="u"
-            _hover={{ color: '#5041F8', fontWeight: 'semibold', transition: '0.2s ease-in-out' }}
-            >Sign up for free!</Text>
-        </Link>
-    </Stack>
+        <Box
+        display="grid"
+        placeItems="center" 
+        >
+            <Stack  direction="row" spacing={1} mt={4} >
+            <Text>Don't have an account?</Text>
+            <Link to="/sign-up">
+                <Text
+                as="u"
+                _hover={{ color: '#5041F8', fontWeight: 'semibold', transition: '0.2s ease-in-out' }}
+                >Sign up for free!</Text>
+            </Link>
+            </Stack>
+        </Box>
     );
 }

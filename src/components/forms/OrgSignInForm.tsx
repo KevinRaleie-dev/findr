@@ -3,11 +3,11 @@ import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 
 import { useFormik } from 'formik';
-import type { LoginType } from '../../api';
+import type { LoginType } from '../../api/mod';
 
 import { useSWRConfig } from 'swr'
 
-import { loginOrganization } from '../../api'
+import { loginOrganization } from '../../api/mod'
 
 export const OrgSignInForm: React.FunctionComponent = () => {
 

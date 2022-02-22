@@ -4,7 +4,7 @@ import { HomeLayout } from '../components/HomeLayout'
 import { LayoutBox } from '../components/LayoutBox'
 import { Card } from '../components/Card'
 
-import { fetchLinks, API_LINKS_URL } from '../api'
+import { fetchLinks, API_LINKS_URL } from '../api/mod'
 
 import useSwr from 'swr'
 import { BursaryLink } from '../components/BursaryLink'
