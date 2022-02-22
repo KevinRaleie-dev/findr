@@ -110,7 +110,7 @@ export const OrgSignUpForm = () => {
                     name="province" 
                     onChange={formik.handleChange}
                     value={formik.values.province}
-                    placeholder="Province" 
+                    placeholder="Province or State" 
                     width="350px" />
                 </FormControl>
                 <FormControl id="city">

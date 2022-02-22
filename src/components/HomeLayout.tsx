@@ -8,7 +8,6 @@ import {
     FiInfo,
     FiMessageCircle,
     FiPhone,
-    FiLogOut,
     FiHash
 } from 'react-icons/fi'
 
@@ -44,7 +43,8 @@ const SidePanel: React.FunctionComponent = () => {
             <Stack direction="column" spacing={2}>
                 <LeftPanelLink
                     icon={<FiHome />}
-                    title="Home" />
+                    title="Home"
+                    url="/home" />
                 <LeftPanelLink
                     icon={<FiMessageCircle />}
                     title="FAQ" />

@@ -76,7 +76,7 @@ export const UserSignUpForm: React.FunctionComponent = () => {
     return (
         <form onSubmit={formik.handleSubmit}>
             <Stack direction="column" spacing={3}>
-                <FormControl id="email">
+                <FormControl id="email" isRequired>
                     <FormLabel>Email address</FormLabel>
                     <Input 
                     type="email" 
@@ -118,7 +118,7 @@ export const UserSignUpForm: React.FunctionComponent = () => {
                     placeholder="Last Name" 
                     width="350px" />
                 </FormControl>
-                <FormControl id="password">
+                <FormControl id="password" isRequired>
                     <FormLabel>Password</FormLabel>
                     <Input 
                     type="password" 

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-location'
 
 import { loginUserFetcher } from '../../api'
 import type { LoginType } from '../../api'
-import { IHandleSubmit } from '../../types';
+import type { IHandleSubmit } from '../../types';
 import { useUserStore } from '../../store/user.store'
 
 export const UserSignInForm: React.FunctionComponent = () => {
@@ -24,7 +24,7 @@ export const UserSignInForm: React.FunctionComponent = () => {
         toast({
             title: params.title,
             description: params.description,
-            position: 'top',
+            position: 'bottom-left',
             variant: 'subtle',
             status: params.status,
             duration: params.duration,
